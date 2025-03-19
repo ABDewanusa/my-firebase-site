@@ -10,6 +10,7 @@ A modern web application built with React, TypeScript, and Supabase, featuring a
 - 📱 Fully responsive design
 - ⚡ Real-time data with Supabase
 - 🔒 Type-safe with TypeScript
+- 🚀 Automatic deployment with GitHub Actions
 
 ## Getting Started
 
@@ -18,6 +19,7 @@ A modern web application built with React, TypeScript, and Supabase, featuring a
 - Node.js (v14 or higher)
 - npm or yarn
 - Supabase account
+- Firebase account
 
 ### Installation
 
@@ -63,6 +65,23 @@ src/
 - Tailwind CSS
 - Supabase
 - React Router
+- Firebase Hosting
+- GitHub Actions
+
+## Deployment
+
+This project is automatically deployed to Firebase Hosting whenever changes are pushed to the main branch. The deployment process is handled by GitHub Actions and includes:
+
+1. Building the project
+2. Running tests
+3. Deploying to Firebase Hosting
+
+To set up automatic deployment for your own project:
+
+1. Create a Firebase project
+2. Generate a Firebase token using `firebase login:ci`
+3. Add the token to your GitHub repository secrets as `FIREBASE_TOKEN`
+4. Push to the main branch to trigger deployment
 
 ## Contributing
 
