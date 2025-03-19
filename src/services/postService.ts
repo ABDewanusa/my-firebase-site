@@ -1,5 +1,5 @@
 import { supabase } from '../supabaseClient';
-import { Post, Tag } from '../types/post';
+import { Post } from '../types/post';
 
 export async function getPosts() {
   const { data: posts, error } = await supabase
